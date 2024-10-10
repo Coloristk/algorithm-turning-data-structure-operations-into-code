@@ -8,6 +8,9 @@
 */
 
 // Start coding here
+function calculateTempt(tempt){
+    return tempt.map(temp => (temp - 32) * 5/9)
+}
 
 const tempt1 = [14.0, 15.8, 24.8, 26.6, 32.0];
 console.log(calculateTempt(tempt1)); // [ -10, -9, -4, 0 ]
